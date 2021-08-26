@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="UserTestApplication.Views.MainPage"
+             xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
+             xmlns:local="clr-namespace:Behaviors"
+             Title="{Binding Title}"
+             prism:ViewModelLocator.AutowireViewModel="True">
+
+    <StackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" BackgroundColor="#CDE0C9">
+                <StackLayout Orientation="Vertical" Padding="60,30,60,30">
+                    <Label Text="{Binding ErrorMessageText}" IsVisible="False">
+                        <Label.Triggers>
+                            <DataTrigger TargetType="Label" Binding="{Binding IsListVisible}" Value="true">
+                                <Setter Property="IsVisible" Value="False"/>
+                            </DataTrigger>
+                            <DataTrigger TargetType="Label" Binding="{Binding IsListVisible}" Value="false">
+                        <Setter Property="IsVisible" Value="True"/>
+                            </DataTrigger>
+                        </Label.Triggers>
+                    </Label>
+                    <ListView VerticalOptions="CenterAndExpand" RowHeight="80" ItemsSource="{Binding UserList}" HorizontalOptions="CenterAndExpand"
+                          SelectedItem="{Binding SelectedUser}" SeparatorColor="DarkGreen" SeparatorVisibility="Default" IsVisible="{Binding IsListVisible}">
+                        <ListView.Behaviors>
+                            <local:EventToCommandBehavior EventName="ItemSelected" Command="{Binding SelectUserCommand}"/>
+                        </ListView.Behaviors>
+                        <ListView.Header>
+                            <StackLayout Orientation="Horizontal" HeightRequest="40" Padding="5,0,5,0">
+                                <Label Text="User List" TextColor="#2C6975" WidthRequest="250"/>
+                            </StackLayout>
+                        </ListView.Header>
+                        <ListView.ItemTemplate>
+                            <DataTemplate>
+                                <ViewCell>
+                                    <StackLayout Orientation="Horizontal" VerticalOptions="Fill" Margin="10,0,10,5" HeightRequest="80">
+                                         <Image Source="{Binding ImageUrl}" VerticalOptions="Fill" HeightRequest="60" WidthRequest="60" HorizontalOptions="Start"/>
+                                         <Label Text="{Binding Name }"  TextColor="#2C6975" VerticalOptions="Center" HorizontalOptions="StartAndExpand"/>
+                                    </StackLayout>
+                                </ViewCell>
+                            </DataTemplate>
+                        </ListView.ItemTemplate>
+                    </ListView>
+                </StackLayout>
+    </StackLayout>
+
+</ContentPage>

@@ -1,0 +1,1 @@
+C:\Users\Kim\source\repos\UserTestApplication\UserTestApplication\UserTestApplication.UWP\UserTestApplication.UWP.csproj;x86

@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="UserTestApplication.Views.UserDetailPage"
+             xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
+             Title="{Binding Title}"
+             prism:ViewModelLocator.AutowireViewModel="True">
+    <ContentPage.Content>
+        <StackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" BackgroundColor="#CDE0C9">
+            <StackLayout Orientation="Vertical" Padding="60,30,60,30">
+                <Image Source="{Binding UserImageSource}" HeightRequest="150" WidthRequest="150" HorizontalOptions="Center" VerticalOptions="Center"/>
+                <Label Text="{Binding UserName}" HorizontalOptions="Center" VerticalOptions="Center"/>
+                <Button Command="{Binding BackCommand}" Text="BACK"  HeightRequest="40" HorizontalOptions="Fill" BackgroundColor="DarkGreen"/>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

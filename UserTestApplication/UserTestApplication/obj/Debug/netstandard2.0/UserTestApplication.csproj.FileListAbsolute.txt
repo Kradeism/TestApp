@@ -1,0 +1,13 @@
+C:\Users\Kim\source\repos\UserTestApplication\UserTestApplication\UserTestApplication\obj\Debug\netstandard2.0\UserTestApplication.csproj.AssemblyReference.cache
+C:\Users\Kim\source\repos\UserTestApplication\UserTestApplication\UserTestApplication\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\Kim\source\repos\UserTestApplication\UserTestApplication\UserTestApplication\obj\Debug\netstandard2.0\Views\MainPage.xaml.g.cs
+C:\Users\Kim\source\repos\UserTestApplication\UserTestApplication\UserTestApplication\obj\Debug\netstandard2.0\UserTestApplication.AssemblyInfoInputs.cache
+C:\Users\Kim\source\repos\UserTestApplication\UserTestApplication\UserTestApplication\obj\Debug\netstandard2.0\UserTestApplication.AssemblyInfo.cs
+C:\Users\Kim\source\repos\UserTestApplication\UserTestApplication\UserTestApplication\obj\Debug\netstandard2.0\UserTestApplication.csproj.CoreCompileInputs.cache
+C:\Users\Kim\source\repos\UserTestApplication\UserTestApplication\UserTestApplication\bin\Debug\netstandard2.0\UserTestApplication.deps.json
+C:\Users\Kim\source\repos\UserTestApplication\UserTestApplication\UserTestApplication\bin\Debug\netstandard2.0\UserTestApplication.dll
+C:\Users\Kim\source\repos\UserTestApplication\UserTestApplication\UserTestApplication\bin\Debug\netstandard2.0\UserTestApplication.pdb
+C:\Users\Kim\source\repos\UserTestApplication\UserTestApplication\UserTestApplication\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\Kim\source\repos\UserTestApplication\UserTestApplication\UserTestApplication\obj\Debug\netstandard2.0\UserTestApplication.dll
+C:\Users\Kim\source\repos\UserTestApplication\UserTestApplication\UserTestApplication\obj\Debug\netstandard2.0\UserTestApplication.pdb
+C:\Users\Kim\source\repos\UserTestApplication\UserTestApplication\UserTestApplication\obj\Debug\netstandard2.0\Views\UserDetailPage.xaml.g.cs
